@@ -6,7 +6,7 @@ if($link->msg == "ok"){
  break;
  
 }else{
-clear();
+aclear();
 echo ("
            ____   _____ _____  
      /\   |  _ \ / ____|  __ \ 
@@ -40,7 +40,7 @@ $result = curl_exec($ch);
 curl_close($ch);
 return $result; 
 }
-function clear(){
+function aclear(){
 
 if (strtoupper(substr(PHP_OS, 0, 3)) === 'LIN') {
         system("clear");
